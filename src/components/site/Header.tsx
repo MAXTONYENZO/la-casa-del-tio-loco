@@ -12,7 +12,6 @@ const links = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
-  // ✅ AGREGAR ESTE ESTADO
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -32,11 +31,17 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo + Texto */}
         <a
           href="#inicio"
-          className="font-serif text-xl font-bold tracking-tight text-brown transition-colors hover:text-terracotta"
+          className="flex items-center gap-3 font-serif text-xl font-bold tracking-tight text-brown transition-colors hover:text-terracotta"
         >
-          La Casa del <span className="italic text-terracotta">Tío Loco</span>
+          <img
+            src="/images/logo_ok.png"
+            alt="La Casa del Tío Loco"
+            className="h-10 w-auto object-contain brightness-0 contrast-150"
+          />
+         
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

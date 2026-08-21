@@ -75,17 +75,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "La Casa del Tío Loco — Mansión para bodas y fiestas inolvidables" },
+      { title: "La Casa del Tío Loco — Una casa para eventos y fiestas inolvidables" },
       {
         name: "description",
         content:
-          "Mansión exclusiva para bodas, quinceañeros y eventos corporativos. Elegancia sin aburrimiento, hasta 300 invitados. Apúntate y celebra la fiesta de tu vida.",
+          "Local de recepciones exclusiva para bodas, quinceañeros y eventos corporativos. Elegancia sin aburrimiento, hasta 300 invitados. Apúntate y celebra la fiesta de tu vida.",
       },
       { property: "og:title", content: "La Casa del Tío Loco" },
       {
         property: "og:description",
         content:
-          "Elegancia en tu evento. Fiestas inolvidables para extrovertidos como tú.",
+          "Nuestra esencia. Celebrar la locura más bonita de todas: Estar Juntos",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

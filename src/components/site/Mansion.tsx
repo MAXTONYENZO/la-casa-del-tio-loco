@@ -141,12 +141,10 @@ export function Welcome() {
 
 export function Mansion() {
   const features = [
-    { icon: Users, label: "Aforo", detail: "Hasta 300 invitados sentados" },
-    { icon: Trees, label: "Área", detail: "2,500 m²" },
-    { icon: Church, label: "Capilla", detail: "Capilla propia para 100 personas" },
-    { icon: Car, label: "Estacionamiento", detail: "Privado para 150 vehículos" },
-    { icon: Music, label: "Sonido", detail: "Sistema profesional incluido" },
-    { icon: Sunset, label: "Atardecer", detail: "Vista privilegiada al ocaso" },
+    { icon: Users, label: "Aforo", detail: "Hasta 300 invitados" },
+    { icon: Trees, label: "Área Total", detail: "200 m²" },      
+    { icon: Music, label: "Sonido", detail: "Sistema profesional" },
+   
   ];
 
   return (
@@ -162,7 +160,7 @@ export function Mansion() {
           <p className="mt-6 text-lg text-brown/70 leading-relaxed">
             No es un lugar cualquiera. Es la casa de ese tío excéntrico y genial
             que todos quisiéramos tener. Construida en este año 2026, será testigo de las
-            mejores fiestas de la región.
+            mejores fiestas de nuestra región.
           </p>
         </div>
 

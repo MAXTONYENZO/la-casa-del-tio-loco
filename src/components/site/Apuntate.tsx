@@ -289,10 +289,15 @@ export function Footer() {
   return (
     <footer className="bg-brown text-cream/70 py-12 border-t border-cream/10">
       <div className="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="font-serif text-lg">
-          La Casa del <span className="italic text-gold">Tío Loco</span>
+        <div className="flex items-center gap-3">
+          <img
+            src="/images/logo_ok.png"
+            alt="La Casa del Tío Loco"
+            className="h-8 w-auto object-contain brightness-0 invert contrast-150"
+          />
+         
         </div>
-        <div className="text-sm">© {new Date().getFullYear()} — Fiestas inolvidables desde 1928.</div>
+        <div className="text-sm">© {new Date().getFullYear()} — Eventos inolvidables</div>
       </div>
     </footer>
   );

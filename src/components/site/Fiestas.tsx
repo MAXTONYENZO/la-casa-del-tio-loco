@@ -26,9 +26,9 @@ const events: {
 const filters: (EventKind | "Todas")[] = ["Todas", "Bodas", "15 Años", "Cumpleaños", "Corporativos"];
 
 const testimonials = [
-  { text: "El Tío Loco hizo de nuestra boda algo único. Nuestros invitados aún hablan de la fiesta.", author: "Ana y Carlos" },
-  { text: "Mi fiesta de 15 años fue un sueño. La mansión es espectacular y el equipo, un lujo.", author: "Valeria" },
-  { text: "Nuestro evento corporativo fue un éxito.", author: "Bennu Productora" },
+  { text: "El Tío Loco fue testigo de nuestra boda única. Nuestros invitados aún hablan de la fiesta.", author: "Luisa y Carlos" },
+  { text: "Mi fiesta de 15 años fue un sueño hecho realidad. La casa del tío Loco es espectacular y el equipo humano, un lujo.", author: "Valeria" },
+  { text: "Nuestro evento corporativo fue todo un éxito.", author: "Bennu Productora" },
 ];
 
 export function Fiestas() {
@@ -50,7 +50,7 @@ export function Fiestas() {
             Las Fiestas del <em className="text-terracotta not-italic">Tío Loco</em>
           </h2>
           <p className="mt-6 text-lg text-brown/70">
-            En La Casa del Tío Loco no hacemos eventos aburridos. Hacemos fiestas que se
+            En "La Casa del Tío Loco" no hacemos eventos aburridos. Hacemos fiestas que se
             recuerdan por siempre. Bodas, 15 años, cumpleaños, celebraciones corporativas...
             cualquier excusa es buena para celebrar.
           </p>

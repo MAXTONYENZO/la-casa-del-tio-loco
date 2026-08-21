@@ -12,12 +12,11 @@ const videos = [
 ];
 
 const services = [
-  { icon: Target, name: "Wedding Planning", desc: "Planificamos tu boda al detalle. Decoración, cronograma, proveedores." },
+  
   { icon: Utensils, name: "Catering", desc: "Menús personalizados con los mejores sabores." },
-  { icon: Camera, name: "Fotografía y Video", desc: "Profesionales que capturan cada emoción." },
   { icon: Palette, name: "Decoración", desc: "Ambientes únicos que reflejan tu personalidad." },
   { icon: Music2, name: "Música y Animación", desc: "DJs, bandas en vivo, shows que encienden la fiesta." },
-  { icon: Bus, name: "Transporte", desc: "Traslado para tus invitados desde la ciudad." },
+  
 ];
 
 export function Album() {
@@ -61,32 +60,7 @@ export function Album() {
           ))}
         </div>
 
-        {/* Services */}
-        <div className="mt-24">
-          <div className="text-center max-w-2xl mx-auto">
-            <span className="text-xs uppercase tracking-[0.3em] text-olive font-semibold">
-              Todo incluido
-            </span>
-            <h3 className="mt-3 font-serif text-3xl font-bold text-brown md:text-4xl">
-              Nuestros Servicios
-            </h3>
-          </div>
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => (
-              <div
-                key={s.name}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-cream/40 p-8 transition-all hover:border-terracotta hover:shadow-elegant hover:-translate-y-1"
-              >
-                <div className="grid size-14 place-items-center rounded-2xl bg-linear-to-br from-terracotta to-brown text-cream mb-5 shadow-soft group-hover:scale-110 transition-transform">
-                  <s.icon className="size-6" />
-                </div>
-                <h4 className="font-serif text-xl font-bold text-brown">{s.name}</h4>
-                <p className="mt-2 text-sm text-brown/70 leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+       
       </div>
 
       {/* Video lightbox */}
