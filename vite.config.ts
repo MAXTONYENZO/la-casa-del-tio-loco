@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -9,7 +8,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(),
   ],
   resolve: {
     alias: {
@@ -19,5 +17,15 @@ export default defineConfig({
   server: {
     port: 8080,
   },
-  // NO USAR ssr: false aquí
+  build: {
+    outDir: 'dist',
+  },
+  css: {
+    postcss: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
+  },
 });
