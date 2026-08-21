@@ -8,6 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [
     react(),
+    // NO incluyas tailwindcss() aquí
   ],
   resolve: {
     alias: {
@@ -19,13 +20,5 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-  },
-  css: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
   },
 });
